@@ -1,0 +1,11 @@
+#Compilados, respaldados y base de datos
+*.pyc
+*~
+*.sql
+#*#
+.#*
+.old
+.bak
+proyecto/db/*
+proyecto/settings.py
+proyecto/apache/sedd

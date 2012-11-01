@@ -1,0 +1,16 @@
+{% extends "base.html"%}
+
+{% block title %} 
+Registro de Asistentes 
+{% endblock %}
+
+{% block content %}
+
+<h2> Registro de Asistentes </h2>
+<form id="grabar_asistente" method="POST" action=".">
+  {% csrf_token %} 
+  {{ form.as_p }}
+  <input type="submit" value="GRABAR"/>
+  <input type="reset" value="BORRAR"/>
+</form>
+{% endblock %}
